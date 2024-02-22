@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greer's Garage</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <!--Link to bootstrap style sheet-->
+</head>
+<!--Container class allows bootstrap to style the body in the grid system; bg-info gives the background the color-->
+<body class="container bg-info">
+
+    <!--Navbar style, dark gray color-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--Navbar Brand gives you an opprotunity to brand your webpage. Use a logo, or your brand name. Button style to allow you to ho home when you press it -->
+        <a class="navbar-brand" href="index.html">Greer's Garage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navagation links to seperate pages-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Projects</a>
+                </li>
+            </ul>
+        </div> 
+        <!--Searchbar and search button-->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+            
+    </nav>
+
+    <!--Container for main fontent, red background color-->
+    <div class="container bg-danger">
+        <!--Row class, without the row, you can't have columns-->
+        <div class="row">
+            <!--Column-->
+            <div class="col-9">
+                <p class="h4 text-center">Vote on what I work on next!</p>
+                <!--Carousel for images to vote on with the form with autoplay-->
+                <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                    <!--Indicators for slides on bottom to show which slide you are on-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!--Image source, displayed as a block level element and a width of 100% of the container(column)-->
+                      <div class="carousel-item active">
+                        <img src="https://www.nikkoindustries.com/cdn/shop/products/stormtrooperfront_2400x1657.jpg?v=1618448440" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://static.wixstatic.com/media/a27d24_5daec52aab1540e3b784772e442957ca~mv2.jpg/v1/fill/w_751,h_751,al_c,q_85,usm_0.66_1.00_0.01/a27d24_5daec52aab1540e3b784772e442957ca~mv2.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.etsystatic.com/21186286/r/il/1fb372/4721739945/il_794xN.4721739945_gdhm.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.hex3dpatreon.com/imag/magy1.PNG" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://media.printables.com/media/prints/497231/images/4047563_a69365a1-b2aa-4f1b-ab0e-c47ed863f94d/thumbs/inside/1280x960/jpg/shield-cosplay.webp" class="d-block w-100" >
+                      </div>
+                    </div>
+
+                    <!--Buttons controls for Carousel, Previous and Next-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                  <br>
+            </div>
+
+            <div class="col-3">
+                <!--Header for form; h6 size by using the class-->
+                <p class="h4 text-center">Vote here!</p>
+                    <!--Form for radio selections-->
+                <div class="form-check"> 
+                    <input class="form-check-input" type="radio" name="pollRadios" id="pollRadios1" value="option1" checked>
+                    <label class="form-check-label" for="pollRadios1">
+                        Stormtrooper Armor
+                    </label>
+                </div> 
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pollRadios" id="pollRadios2" value="option2">
+                    <label class="form-check-label" for="pollRadios2">
+                        Ironman MK39
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pollRadios" id="pollRadios3" value="option3">
+                    <label class="form-check-label" for="pollRadios3">
+                        Battle Droid
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pollRadios" id="pollRadios4" value="option4">
+                    <label class="form-check-label" for="pollRadios4">
+                        Majora's Mask
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pollRadios" id="pollRadios5" value="option5">
+                    <label class="form-check-label" for="pollRadios5">
+                        Master Sword & Hylian Shield
+                    </label>
+                </div>
+                <!--Submit button-->
+                <button type="submit" class="btn btn-dark btn-outline-success btn-sm">Submit</button>
+        </div>
+
+    </div> 
+
+    <!--Source for JS to work for styling of bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

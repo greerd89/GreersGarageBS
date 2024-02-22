@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greer's Garage</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container bg-info">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--Navbar Brand gives you an opprotunity to brand your webpage. Use a logo, or your brand name. Button style to allow you to ho home when you press it -->
+        <a class="navbar-brand" href="index.html">Greer's Garage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navagation links to seperate pages-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Projects</a>
+                </li>
+            </ul>
+        </div> 
+        <!--Searchbar and search button-->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+            
+    </nav>
+
+    <div class="container bg-warning">
+        <div class="row"> 
+            <p class="h1">Projects I'm Working On</p>
+        </div>
+        <!--Table class, dark gray styling, with a strip pattern as well as a hover aspect that is bordered-->
+        <table class="table table-sm table-striped table-dark table-hover table-bordered">
+            <thread>
+                <!--Table header-->
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">File Name</th>
+                    <th scope="col">Website</th>
+                </tr>
+            </thread>
+            <tbody class="table-group-divider">
+                <!--Table rows styled by the scope-->
+                <tr>
+                    <!--Table Header used for a bold style number-->
+                    <th scope="row">1</th>
+                    <td>Honeycomb Storage Wall</td>
+                    <td>Printables</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>The Mandalorian Din Djarin Beskar Armor</td>
+                    <td>Nikko Industries</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Porsche Wall Plaque</td>
+                    <td>MakerWorld</td>
+                </tr>
+
+            </tbody>
+        </table> 
+        <br>  
+        
+    </div>
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+
+
+</body>
+</html>
